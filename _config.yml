@@ -1,55 +1,115 @@
-# Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
+# Awesome App Landing Page Config
 #
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 
-title: Elastic Notes
-email: elasticnotes@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Structure and design notes the way you want, with support for templates and 
-  customizable row primitives.
-  
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://elasticnotes.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: elasticnotes
-github_username: elasticnotes 
+# Be sure all REQUIRED fields are filled out!
 
-# Build settings
-theme: jekyll-theme-cayman
-plugins:
-  - jekyll-feed
+#
+# General App Info
+#
+app:
+  name: Elastic Notes # REQUIRED - Enter your app name
+  android_id: elasticnotes.com # Optional - Enter Android app id like: com.example.app
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
+  icon: # Leave blank to auto-magically populate
+  # To update use path relative to project root with no leading slash:
+  # e.g. images/app-icon-512.png
+  # 512px or greater, square
+
+  #favicon: # uncomment if uploading own favicon
+  # To update use path relative to project root with no leading slash:
+  # e.g. images/app-favicon.png - can be .ico or .png
+  # 16px or greater, square
+
+  screenshot: # Leave blank to auto-magically populate
+  # To update use path relative to project root with no leading slash:
+  # e.g. images/app-screen-640x1136.png
+  # 640x1136px
+
+  #video: # uncomment if prefer to show a video preview in the screen instead of image
+  # To update use path relative to project root with no leading slash:
+  # e.g. images/app-preview.mp4
+  # 640x1136px
+
+  #app_twitter: # uncomment if the app has a twitter account "@my-awesome-app"
+  #creator_twitter: # uncomment if creator has a twitter account "@awesome-dev"
+  #social_image: # uncomment and add an image - defaults to icon
+  # This will show up when your url is shared on sites like facebook and twitter
+  # To update use path relative to project root with no leading slash:
+  # e.g. images/app-social_image.png
+  # 512px or greater, square or width = 2X height
 #
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
+# Marketing
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+marketing_header: Does Notes # Optional
+marketing_desc: No need for marketing, it sells itself (free).
+# Social Links
+#
+# Includes an icon for each username you enter
+#
+social-links:
+  github: elasticnotes
+  facebook:
+  twitter: elasticnotes
+  pinterest:
+  instagram:
+  email: elasticnotes@gmail.com
+  youtube: # channel/<your_long_string> or <user-name>
+  googleplus: # anything in your profile username that comes after plus.google.com/
+
+#
+# Enable/Disable Features & Page Elements
+#
+enable:
+  app_icon: true
+  smart_app_banner: true
+
+#
+# Device
+#
+# Available devices:
+# * iphone-se-silver-vertical
+# * iphone-se-space-gray-vertical
+# * ipod-touch-blue-vertical
+#
+device: iphone-se-silver-vertical # REQUIRED
+
+#
+# Theme Settings
+#
+background_color: "#989898" # Optional
+background_image: /images/backgrounds/58-usersthink-stock-image-web.jpg # Optional - Use Relative path e.g. images/backgrounds/image.jpg
+text_color: white # Optional
+link_color: # Optional
+social_link_color: white # Optional
+download_button_background_color: "#0191FF" # Optional
+download_button_text_color: white; # Optional
+
+#
+# Site Info
+#
+# If you want specific meta info for your <head></head> tags
+#
+title: # Optional - Enter your site title
+description: # Optional - Enter your site description
+
+#
+# Google Analytics
+#
+google_analytics: # Enter your tracking code (e.g. UA-2110908-2) to activate tracking
+
+#
+# !! You don't need to change any of the configuration flags below !!
+#
+
+# The release of Awesome App Landing Page that you're using
+version: v1.0
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :compressed
+
+# Exclude these files from your production _site
+exclude:
+  - LICENSE
+  - README.md
